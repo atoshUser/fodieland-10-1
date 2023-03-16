@@ -1,0 +1,15 @@
+@mixin img-bf($img,$wh:14px,$hg:14px){
+  display: inline-block;
+  content: " ";
+  width: $wh;
+  height: $hg;
+  background-image: $img;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+@mixin fon($fw:400,$fz:16px,$lh:auto){
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+}

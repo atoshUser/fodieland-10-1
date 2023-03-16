@@ -1,0 +1,48 @@
+.aside-left {
+margin-right: 40px;
+}
+.aside-left__list {
+  display:flex;
+  flex-direction: column;
+  gap: 32px;
+  list-style: none;
+}
+.aside-left__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+     img{
+      object-fit: cover;
+     }
+    img + span{
+      display: flex;
+      flex-direction: column;
+      padding: 15px 0;
+      margin-left: 40px;
+    }
+
+     span {
+        h3{
+          @include fon(600, 24px);
+        line-height: 26px;
+          margin: 0 0 16px 0;
+
+
+           & + p{
+            margin-bottom: 32px;
+           }
+        }
+     }
+ }
+
+ .footer-card{
+  display: flex;
+  align-items: center;
+ gap: 10px;
+
+     span:first-child{
+    padding-right: 20px;
+      border-right: 1px solid rgb(0, 0, 0,0.1);
+     }
+ }
